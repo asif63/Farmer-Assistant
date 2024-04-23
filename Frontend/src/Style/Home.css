@@ -1,0 +1,49 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('../images/rice-flowers-4180212.jpg'); /* Image 1 */
+    }
+    25% {
+        
+        background-image: url('../images/sunset-3875895.jpg'); /* Image 4 */
+    }
+    50% {
+        background-image: url('../images/pexels-james-wheeler-1542495.jpg'); /* Image 3 */
+    }
+    75% {
+        background-image: url('../images/farmer-1822530.jpg'); /* Image 4 */
+    }
+    100% {
+        background-image: url('../images/field-5137778.jpg'); /* Image 2 */
+    }
+    
+}
+
+
+.sent1{
+    font-size: 70px;
+    color: rgb(15, 15, 16);
+}
+.sent2{
+    font-size: 70px;
+    color: rgb(247, 10, 10); 
+}
+
+.wlc{
+    background-color: rgba(175, 196, 153, 0.444);
+}

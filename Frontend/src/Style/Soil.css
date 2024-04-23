@@ -1,0 +1,32 @@
+.soil-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .soil-card {
+    display: flex; /* Change to flex display */
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .soil-image {
+    width: 200px;
+    height: auto;
+  }
+  
+  .soil-description {
+    flex: 1; /* Take remaining space */
+    padding: 10px;
+  }
+  
+  .soil-description h2 {
+    margin-top: 0;
+  }
+  
+  .soil-description p {
+    font-size: 14px;
+  }

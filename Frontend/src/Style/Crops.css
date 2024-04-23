@@ -1,0 +1,64 @@
+.crop-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .crop-card {
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .crop-card img {
+    width: 300px;
+    height: 250px;
+    transition: transform 0.3s;
+  }
+  
+  .crop-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .crop-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .crop-card:hover .crop-overlay {
+    opacity: 1;
+  }
+  
+  .crop-description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    overflow: auto;
+    z-index: 1000;
+  }
+  
+  .crop-description h3 {
+    margin-top: 0;
+  }
+  
+  .crop-description p {
+    margin-bottom: 0;
+  }
+  

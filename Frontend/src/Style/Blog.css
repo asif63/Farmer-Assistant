@@ -1,0 +1,51 @@
+
+.blog-container {
+    max-width: 100%; /* Change max-width to 100% */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsla(195, 86%, 46%, 0.319);
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.blog-container h2 {
+    color: #131212;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-container p {
+    color: #0e0e0e;
+    font-size: 16px;
+    line-height: 1.6;
+    order: -1; /* Move the paragraph to the top */
+}
+
+.blog-container img {
+    display: block;
+    max-width: 100%; /* Change max-width to 100% */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    align-self: flex-end; /* Align image to the right */
+}
+
+/* Media query for smaller screens */
+@media (min-width: 768px) {
+    .blog-container {
+        flex-direction: row; /* Arrange items side by side */
+        align-items: center; /* Center items vertically */
+    }
+
+    .blog-container img {
+        max-width: 40%; /* Adjust image width for smaller screens */
+        margin-right: 20px; /* Add space between image and text */
+        align-self: flex-start; /* Align image to the left */
+    }
+
+    .blog-container p {
+        max-width: 60%; /* Adjust text width for smaller screens */
+        order: 0; /* Reset paragraph order */
+    }
+}
